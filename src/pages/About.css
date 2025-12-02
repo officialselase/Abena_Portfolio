@@ -1,0 +1,1201 @@
+/* About Page Styles */
+.about-page {
+  width: 100%;
+}
+
+/* Intro Section */
+.about-page .intro {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-16) var(--space-8) var(--space-12);
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+}
+
+.about-page .intro h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: var(--space-4);
+}
+
+.about-page .intro .lead {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.95;
+}
+
+/* Story Section */
+.about-page .story {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-section) var(--space-8);
+  background-color: #f7fafc;
+}
+
+.about-page .story h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: var(--space-10);
+  text-align: center;
+}
+
+.about-page .story-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-page .story-paragraph {
+  margin-bottom: var(--space-10);
+}
+
+.about-page .story-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.about-page .story-paragraph h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #3182ce;
+  margin-bottom: var(--space-4);
+  position: relative;
+  padding-left: var(--space-6);
+}
+
+.about-page .story-paragraph h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+}
+
+.about-page .story-paragraph p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #4a5568;
+  margin-bottom: var(--space-4);
+}
+
+.about-page .story-paragraph p:last-child {
+  margin-bottom: 0;
+}
+
+/* Education Section */
+.about-page .education {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-section) var(--space-8);
+}
+
+.about-page .education h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: var(--space-8);
+  text-align: center;
+}
+
+.about-page .education-item {
+  background-color: #ffffff;
+  padding: var(--space-10);
+  border-radius: var(--space-3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #3182ce;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-page .education-item .degree-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-page .education-item h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #3182ce;
+  margin: 0;
+}
+
+.about-page .education-item .graduation-year {
+  font-size: 1rem;
+  color: #718096;
+  font-weight: 500;
+  margin: 0;
+}
+
+.about-page .education-item .institution {
+  font-size: 1.25rem;
+  color: #2d3748;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.about-page .education-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-page .education-details .focus-area,
+.about-page .education-details .coursework,
+.about-page .education-details .achievements {
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.about-page .education-details .focus-area:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.about-page .education-details h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.75rem;
+}
+
+.about-page .education-details p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4a5568;
+  margin: 0;
+}
+
+.about-page .education-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-page .education-details li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.about-page .education-details li:last-child {
+  margin-bottom: 0;
+}
+
+.about-page .education-details li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #3182ce;
+  font-weight: 600;
+}
+
+/* Management Background Section */
+.about-page .management-background {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  background-color: #f7fafc;
+}
+
+.about-page .management-background h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.about-page .management-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-page .management-intro {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #4a5568;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.about-page .management-roles {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.about-page .management-role {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #764ba2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-page .management-role:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.about-page .management-role h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #764ba2;
+  margin-bottom: 0.5rem;
+}
+
+.about-page .management-role .role-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #2d3748;
+  margin-bottom: 0.25rem;
+}
+
+.about-page .management-role .role-period {
+  font-size: 0.95rem;
+  color: #718096;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.about-page .management-role .role-achievements {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-page .management-role .role-achievements li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4a5568;
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.about-page .management-role .role-achievements li:last-child {
+  margin-bottom: 0;
+}
+
+.about-page .management-role .role-achievements li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #764ba2;
+  font-weight: 600;
+}
+
+.about-page .management-skills {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-page .management-skills h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.about-page .management-skills .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.about-page .management-skills .skill-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background-color: #f7fafc;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.about-page .management-skills .skill-item:hover {
+  background-color: #edf2f7;
+  border-color: #764ba2;
+  transform: translateX(4px);
+}
+
+.about-page .management-skills .skill-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.about-page .management-skills .skill-name {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #2d3748;
+}
+
+/* Virtual Assistance Section */
+.about-page .virtual-assistance {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  background-color: #f7fafc;
+}
+
+.about-page .virtual-assistance h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.about-page .virtual-assistance .va-intro {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #4a5568;
+  max-width: 900px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+
+.about-page .va-capabilities {
+  max-width: 1000px;
+  margin: 0 auto 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.about-page .va-category {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #48bb78;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-page .va-category:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.about-page .va-category h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.about-page .va-category .va-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.about-page .va-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-page .va-category li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #4a5568;
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.about-page .va-category li:last-child {
+  margin-bottom: 0;
+}
+
+.about-page .va-category li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #48bb78;
+  font-weight: 600;
+}
+
+.about-page .va-value-proposition {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #48bb78;
+}
+
+.about-page .va-value-proposition h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.about-page .va-value-proposition p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #4a5568;
+  margin: 0;
+}
+
+/* Skills Overview Section */
+.about-page .skills-overview {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.about-page .skills-overview h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.about-page .skills-overview .skills-intro {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #4a5568;
+  max-width: 900px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+
+.about-page .skills-categories {
+  max-width: 1000px;
+  margin: 0 auto 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.about-page .skill-category {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #3182ce;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-page .skill-category:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.about-page .skill-category h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.about-page .skill-category .category-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.about-page .skill-category .skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-page .skill-category .skills-list li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #4a5568;
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.about-page .skill-category .skills-list li:last-child {
+  margin-bottom: 0;
+}
+
+.about-page .skill-category .skills-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #3182ce;
+  font-weight: 600;
+}
+
+.about-page .key-strengths {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #f7fafc;
+  padding: 2.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-page .key-strengths h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.about-page .strengths-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.about-page .strength-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.about-page .strength-item:hover {
+  border-color: #3182ce;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.about-page .strength-item .strength-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.about-page .strength-item .strength-content h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.about-page .strength-item .strength-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #4a5568;
+  margin: 0;
+}
+
+/* Personality Section */
+.about-page .personality {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+}
+
+.about-page .personality h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about-page .personality .personality-intro {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #4a5568;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.about-page .personality-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.about-page .personality-category {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-page .personality-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.about-page .personality-header .personality-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.about-page .personality-header h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0;
+}
+
+/* Values Grid */
+.about-page .values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.about-page .value-item {
+  padding: 1.5rem;
+  background-color: #f7fafc;
+  border-radius: 0.5rem;
+  border-left: 4px solid #667eea;
+  transition: all 0.3s ease;
+}
+
+.about-page .value-item:hover {
+  background-color: #edf2f7;
+  border-left-color: #764ba2;
+  transform: translateX(4px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-page .value-item h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.75rem;
+}
+
+.about-page .value-item p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #4a5568;
+  margin: 0;
+}
+
+/* Approach Content */
+.about-page .approach-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-page .approach-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background-color: #f7fafc;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.about-page .approach-item:hover {
+  background-color: #edf2f7;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.about-page .approach-number {
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 50%;
+}
+
+.about-page .approach-text h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.about-page .approach-text p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #4a5568;
+  margin: 0;
+}
+
+/* Interests Content */
+.about-page .interests-content .interests-intro {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #4a5568;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about-page .interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.about-page .interest-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: #f7fafc;
+  border-radius: 0.5rem;
+  border-top: 3px solid #48bb78;
+  transition: all 0.3s ease;
+}
+
+.about-page .interest-item:hover {
+  background-color: #edf2f7;
+  border-top-color: #38a169;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.about-page .interest-item .interest-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.about-page .interest-item .interest-text h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.about-page .interest-item .interest-text p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #4a5568;
+  margin: 0;
+}
+
+/* Personality Closing */
+.about-page .personality-closing {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.about-page .personality-closing p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #ffffff;
+  margin: 0;
+}
+
+.about-page .personality-closing strong {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-page .intro {
+    padding: 3rem 1.5rem 2.5rem;
+  }
+
+  .about-page .intro h1 {
+    font-size: 2.25rem;
+  }
+
+  .about-page .intro .lead {
+    font-size: 1.25rem;
+  }
+
+  .about-page .story,
+  .about-page .education,
+  .about-page .management-background,
+  .about-page .virtual-assistance,
+  .about-page .skills-overview,
+  .about-page .personality {
+    padding: 3rem 1.5rem;
+  }
+
+  .about-page .management-role {
+    padding: 1.5rem;
+  }
+
+  .about-page .management-role h3 {
+    font-size: 1.375rem;
+  }
+
+  .about-page .management-role .role-title {
+    font-size: 1rem;
+  }
+
+  .about-page .management-skills {
+    padding: 1.5rem;
+  }
+
+  .about-page .management-skills h3 {
+    font-size: 1.375rem;
+  }
+
+  .about-page .management-skills .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .about-page .story h2,
+  .about-page .education h2,
+  .about-page .management-background h2,
+  .about-page .virtual-assistance h2,
+  .about-page .skills-overview h2,
+  .about-page .personality h2 {
+    font-size: 2rem;
+  }
+
+  .about-page .story-paragraph {
+    margin-bottom: 2rem;
+  }
+
+  .about-page .story-paragraph h3 {
+    font-size: 1.375rem;
+  }
+
+  .about-page .education-item {
+    padding: 1.5rem;
+  }
+
+  .about-page .education-item .degree-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .about-page .education-item h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-page .education-item .institution {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-page .education-details {
+    gap: 1.25rem;
+  }
+
+  .about-page .education-details h4 {
+    font-size: 1rem;
+  }
+
+  .about-page .va-capabilities {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .va-category {
+    padding: 1.5rem;
+  }
+
+  .about-page .va-category h3 {
+    font-size: 1.125rem;
+  }
+
+  .about-page .va-value-proposition {
+    padding: 1.5rem;
+  }
+
+  .about-page .va-value-proposition h3 {
+    font-size: 1.375rem;
+  }
+
+  .about-page .skills-categories {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .skill-category {
+    padding: 1.5rem;
+  }
+
+  .about-page .skill-category h3 {
+    font-size: 1.125rem;
+  }
+
+  .about-page .key-strengths {
+    padding: 2rem;
+  }
+
+  .about-page .key-strengths h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-page .strengths-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .strength-item {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page .intro h1 {
+    font-size: 1.875rem;
+  }
+
+  .about-page .intro .lead {
+    font-size: 1.125rem;
+  }
+
+  .about-page .story h2,
+  .about-page .education h2,
+  .about-page .management-background h2,
+  .about-page .virtual-assistance h2,
+  .about-page .skills-overview h2,
+  .about-page .personality h2 {
+    font-size: 1.75rem;
+  }
+
+  .about-page .story-paragraph h3 {
+    font-size: 1.25rem;
+  }
+
+  .about-page .story-paragraph p,
+  .about-page .management-background p,
+  .about-page .virtual-assistance p,
+  .about-page .personality p {
+    font-size: 1rem;
+  }
+
+  .about-page .education-item h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-page .skills-intro {
+    font-size: 1rem;
+  }
+
+  .about-page .skills-categories {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .skill-category {
+    padding: 1.25rem;
+  }
+
+  .about-page .skill-category h3 {
+    font-size: 1.125rem;
+  }
+
+  .about-page .skill-category .category-icon {
+    font-size: 1.25rem;
+  }
+
+  .about-page .skill-category .skills-list li {
+    font-size: 0.875rem;
+  }
+
+  .about-page .key-strengths {
+    padding: 1.5rem;
+  }
+
+  .about-page .key-strengths h3 {
+    font-size: 1.375rem;
+  }
+
+  .about-page .strengths-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .strength-item {
+    padding: 1rem;
+  }
+
+  .about-page .strength-item .strength-icon {
+    font-size: 1.5rem;
+  }
+
+  .about-page .strength-item .strength-content h4 {
+    font-size: 1rem;
+  }
+
+  .about-page .strength-item .strength-content p {
+    font-size: 0.875rem;
+  }
+
+  .about-page .management-intro {
+    font-size: 1rem;
+  }
+
+  .about-page .management-role h3 {
+    font-size: 1.25rem;
+  }
+
+  .about-page .management-role .role-title {
+    font-size: 0.95rem;
+  }
+
+  .about-page .management-role .role-achievements li {
+    font-size: 0.95rem;
+  }
+
+  .about-page .management-skills h3 {
+    font-size: 1.25rem;
+  }
+
+  .about-page .management-skills .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .management-skills .skill-item {
+    padding: 0.625rem 0.875rem;
+  }
+
+  .about-page .management-skills .skill-icon {
+    font-size: 1.25rem;
+  }
+
+  .about-page .management-skills .skill-name {
+    font-size: 0.875rem;
+  }
+
+  .about-page .va-intro {
+    font-size: 1rem;
+  }
+
+  .about-page .va-category {
+    padding: 1.25rem;
+  }
+
+  .about-page .va-category h3 {
+    font-size: 1.125rem;
+  }
+
+  .about-page .va-category .va-icon {
+    font-size: 1.25rem;
+  }
+
+  .about-page .va-category li {
+    font-size: 0.875rem;
+  }
+
+  .about-page .va-value-proposition {
+    padding: 1.25rem;
+  }
+
+  .about-page .va-value-proposition h3 {
+    font-size: 1.25rem;
+  }
+
+  .about-page .va-value-proposition p {
+    font-size: 1rem;
+  }
+
+  .about-page .personality {
+    padding: 3rem 1.5rem;
+  }
+
+  .about-page .personality h2 {
+    font-size: 2rem;
+  }
+
+  .about-page .personality .personality-intro {
+    font-size: 1.125rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .about-page .personality-content {
+    gap: 2.5rem;
+  }
+
+  .about-page .personality-category {
+    padding: 2rem;
+  }
+
+  .about-page .personality-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .about-page .personality-header .personality-icon {
+    font-size: 2rem;
+  }
+
+  .about-page .personality-header h3 {
+    font-size: 1.75rem;
+  }
+
+  .about-page .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .value-item {
+    padding: 1.25rem;
+  }
+
+  .about-page .approach-item {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+
+  .about-page .approach-number {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+  }
+
+  .about-page .interests-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .interest-item {
+    padding: 1.25rem;
+  }
+
+  .about-page .interest-item .interest-icon {
+    font-size: 1.75rem;
+  }
+
+  .about-page .personality-closing {
+    padding: 2rem;
+  }
+
+  .about-page .personality-closing p {
+    font-size: 1rem;
+  }
+
+  .about-page .personality-closing strong {
+    font-size: 1.125rem;
+  }
+}

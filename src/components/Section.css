@@ -1,0 +1,105 @@
+/**
+ * Section Component Styles
+ * 
+ * Provides consistent section spacing and backgrounds across pages.
+ */
+
+/* ===== BASE SECTION STYLES ===== */
+.section {
+  width: 100%;
+  position: relative;
+}
+
+/* ===== SECTION CONTAINER ===== */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: var(--space-container-padding);
+  padding-right: var(--space-container-padding);
+}
+
+/* ===== BACKGROUND VARIANTS ===== */
+.section-bg-default {
+  background-color: var(--color-bg-primary);
+}
+
+.section-bg-secondary {
+  background-color: var(--color-bg-secondary);
+}
+
+.section-bg-gradient {
+  background: var(--gradient-primary);
+  color: white;
+}
+
+.section-bg-gradient h1,
+.section-bg-gradient h2,
+.section-bg-gradient h3,
+.section-bg-gradient h4,
+.section-bg-gradient h5,
+.section-bg-gradient h6 {
+  color: white;
+}
+
+.section-bg-dark {
+  background-color: var(--color-neutral-800);
+  color: var(--color-neutral-100);
+}
+
+.section-bg-dark h1,
+.section-bg-dark h2,
+.section-bg-dark h3,
+.section-bg-dark h4,
+.section-bg-dark h5,
+.section-bg-dark h6 {
+  color: white;
+}
+
+/* ===== SPACING VARIANTS ===== */
+.section-spacing-none {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.section-spacing-sm {
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-8);
+}
+
+.section-spacing-md {
+  padding-top: var(--space-section);
+  padding-bottom: var(--space-section);
+}
+
+.section-spacing-lg {
+  padding-top: var(--space-24);
+  padding-bottom: var(--space-24);
+}
+
+.section-spacing-xl {
+  padding-top: var(--space-32);
+  padding-bottom: var(--space-32);
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+@media (max-width: 768px) {
+  .section-container {
+    padding-left: var(--space-container-padding-mobile);
+    padding-right: var(--space-container-padding-mobile);
+  }
+
+  .section-spacing-md {
+    padding-top: var(--space-section-mobile);
+    padding-bottom: var(--space-section-mobile);
+  }
+
+  .section-spacing-lg {
+    padding-top: var(--space-16);
+    padding-bottom: var(--space-16);
+  }
+
+  .section-spacing-xl {
+    padding-top: var(--space-20);
+    padding-bottom: var(--space-20);
+  }
+}

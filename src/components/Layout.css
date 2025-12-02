@@ -1,0 +1,139 @@
+/* Layout Structure */
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  position: relative;
+}
+
+/* Page Transitions */
+.page-transition {
+  width: 100%;
+  animation-duration: 250ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+
+.page-transition.fadeOut {
+  animation-name: fadeOut;
+}
+
+.page-transition.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer Styles */
+.site-footer {
+  background-color: var(--color-neutral-800);
+  color: var(--color-neutral-200);
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-12) var(--space-8) var(--space-4);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-8);
+  margin-bottom: var(--space-8);
+}
+
+.footer-section h3 {
+  color: var(--color-bg-primary);
+  margin-bottom: var(--space-2);
+  font-size: 1.25rem;
+}
+
+.footer-section h4 {
+  color: var(--color-bg-primary);
+  margin-bottom: var(--space-4);
+  font-size: 1rem;
+}
+
+.footer-section p {
+  color: var(--color-neutral-400);
+  line-height: 1.6;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: var(--space-2);
+}
+
+.footer-links a {
+  color: var(--color-neutral-400);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--color-bg-primary);
+}
+
+.footer-links a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--color-neutral-700);
+  padding-top: var(--space-6);
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: var(--color-neutral-400);
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .footer-container {
+    padding: var(--space-8) var(--space-4) var(--space-4);
+  }
+}
+
+

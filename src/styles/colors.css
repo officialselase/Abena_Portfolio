@@ -1,0 +1,205 @@
+/**
+ * Portfolio Website Color Palette
+ * 
+ * This file defines the complete color system for the portfolio website.
+ * All colors are defined as CSS custom properties (variables) for consistency
+ * and easy maintenance across the entire application.
+ */
+
+:root {
+  /* ===== PRIMARY COLORS ===== */
+  /* Main brand color - Used for primary actions, links, and key UI elements */
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;  /* Main primary */
+  --color-primary-600: #2563eb;  /* Primary hover/active */
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+
+  /* Primary aliases for common use */
+  --color-primary: var(--color-primary-600);
+  --color-primary-hover: var(--color-primary-700);
+  --color-primary-light: var(--color-primary-100);
+  --color-primary-dark: var(--color-primary-800);
+
+  /* ===== SECONDARY COLORS ===== */
+  /* Secondary brand color - Used for accents and complementary elements */
+  --color-secondary-50: #faf5ff;
+  --color-secondary-100: #f3e8ff;
+  --color-secondary-200: #e9d5ff;
+  --color-secondary-300: #d8b4fe;
+  --color-secondary-400: #c084fc;
+  --color-secondary-500: #a855f7;
+  --color-secondary-600: #9333ea;  /* Main secondary */
+  --color-secondary-700: #7e22ce;
+  --color-secondary-800: #6b21a8;
+  --color-secondary-900: #581c87;
+
+  /* Secondary aliases */
+  --color-secondary: var(--color-secondary-600);
+  --color-secondary-hover: var(--color-secondary-700);
+  --color-secondary-light: var(--color-secondary-100);
+  --color-secondary-dark: var(--color-secondary-800);
+
+  /* ===== ACCENT COLORS ===== */
+  /* Accent color - Used for highlights, success states, and positive actions */
+  --color-accent-50: #f0fdf4;
+  --color-accent-100: #dcfce7;
+  --color-accent-200: #bbf7d0;
+  --color-accent-300: #86efac;
+  --color-accent-400: #4ade80;
+  --color-accent-500: #22c55e;
+  --color-accent-600: #16a34a;  /* Main accent */
+  --color-accent-700: #15803d;
+  --color-accent-800: #166534;
+  --color-accent-900: #14532d;
+
+  /* Accent aliases */
+  --color-accent: var(--color-accent-600);
+  --color-accent-hover: var(--color-accent-700);
+  --color-accent-light: var(--color-accent-100);
+  --color-accent-dark: var(--color-accent-800);
+
+  /* ===== NEUTRAL COLORS ===== */
+  /* Grayscale - Used for text, backgrounds, borders, and UI structure */
+  --color-neutral-50: #f9fafb;
+  --color-neutral-100: #f3f4f6;
+  --color-neutral-200: #e5e7eb;
+  --color-neutral-300: #d1d5db;
+  --color-neutral-400: #9ca3af;
+  --color-neutral-500: #6b7280;
+  --color-neutral-600: #4b5563;
+  --color-neutral-700: #374151;
+  --color-neutral-800: #1f2937;
+  --color-neutral-900: #111827;
+
+  /* Neutral aliases for semantic use */
+  --color-text-primary: var(--color-neutral-900);
+  --color-text-secondary: var(--color-neutral-600);
+  --color-text-muted: var(--color-neutral-500);
+  --color-text-light: var(--color-neutral-400);
+  
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: var(--color-neutral-50);
+  --color-bg-tertiary: var(--color-neutral-100);
+  
+  --color-border-light: var(--color-neutral-200);
+  --color-border-medium: var(--color-neutral-300);
+  --color-border-dark: var(--color-neutral-400);
+
+  /* ===== SEMANTIC COLORS ===== */
+  /* Success - Used for positive feedback and successful operations */
+  --color-success-50: #f0fdf4;
+  --color-success-100: #dcfce7;
+  --color-success-500: #22c55e;
+  --color-success-600: #16a34a;
+  --color-success-700: #15803d;
+  --color-success: var(--color-success-600);
+  --color-success-bg: var(--color-success-50);
+  --color-success-border: var(--color-success-500);
+
+  /* Error/Danger - Used for errors, warnings, and destructive actions */
+  --color-error-50: #fef2f2;
+  --color-error-100: #fee2e2;
+  --color-error-500: #ef4444;
+  --color-error-600: #dc2626;
+  --color-error-700: #b91c1c;
+  --color-error: var(--color-error-600);
+  --color-error-bg: var(--color-error-50);
+  --color-error-border: var(--color-error-500);
+
+  /* Warning - Used for cautionary messages and alerts */
+  --color-warning-50: #fffbeb;
+  --color-warning-100: #fef3c7;
+  --color-warning-500: #f59e0b;
+  --color-warning-600: #d97706;
+  --color-warning-700: #b45309;
+  --color-warning: var(--color-warning-600);
+  --color-warning-bg: var(--color-warning-50);
+  --color-warning-border: var(--color-warning-500);
+
+  /* Info - Used for informational messages */
+  --color-info-50: #eff6ff;
+  --color-info-100: #dbeafe;
+  --color-info-500: #3b82f6;
+  --color-info-600: #2563eb;
+  --color-info-700: #1d4ed8;
+  --color-info: var(--color-info-600);
+  --color-info-bg: var(--color-info-50);
+  --color-info-border: var(--color-info-500);
+
+  /* ===== GRADIENT COLORS ===== */
+  /* Pre-defined gradients for consistent use across the site */
+  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --gradient-accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  --gradient-neutral: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  --gradient-success: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+  
+  /* Hero/Header gradients */
+  --gradient-hero: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-header: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+  /* ===== SHADOW COLORS ===== */
+  /* Box shadows with consistent opacity */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-base: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  
+  /* Colored shadows for interactive elements */
+  --shadow-primary: 0 4px 12px rgba(49, 130, 206, 0.4);
+  --shadow-secondary: 0 4px 12px rgba(147, 51, 234, 0.4);
+  --shadow-accent: 0 4px 12px rgba(22, 163, 74, 0.4);
+
+  /* ===== OVERLAY COLORS ===== */
+  /* Semi-transparent overlays */
+  --overlay-light: rgba(255, 255, 255, 0.9);
+  --overlay-medium: rgba(0, 0, 0, 0.5);
+  --overlay-dark: rgba(0, 0, 0, 0.75);
+
+  /* ===== LEGACY COLOR MAPPINGS ===== */
+  /* These map existing color values to the new system for backward compatibility */
+  /* Blue tones (primary) */
+  --legacy-blue-light: var(--color-primary-400);
+  --legacy-blue: var(--color-primary-600);
+  --legacy-blue-dark: var(--color-primary-800);
+  
+  /* Purple tones (secondary) */
+  --legacy-purple-light: #764ba2;
+  --legacy-purple: #667eea;
+  --legacy-purple-gradient: var(--gradient-primary);
+  
+  /* Green tones (accent/success) */
+  --legacy-green: #48bb78;
+  --legacy-green-dark: #38a169;
+  
+  /* Gray tones (neutral) */
+  --legacy-gray-50: #f7fafc;
+  --legacy-gray-100: #edf2f7;
+  --legacy-gray-200: #e2e8f0;
+  --legacy-gray-300: #cbd5e0;
+  --legacy-gray-400: #a0aec0;
+  --legacy-gray-500: #718096;
+  --legacy-gray-600: #4a5568;
+  --legacy-gray-700: #2d3748;
+  --legacy-gray-800: #1a202c;
+  --legacy-gray-900: #1a1a1a;
+}
+
+/* ===== DARK MODE SUPPORT (Optional - for future implementation) ===== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Uncomment and adjust when implementing dark mode */
+    /* --color-text-primary: var(--color-neutral-50);
+    --color-text-secondary: var(--color-neutral-300);
+    --color-bg-primary: var(--color-neutral-900);
+    --color-bg-secondary: var(--color-neutral-800); */
+  }
+}
