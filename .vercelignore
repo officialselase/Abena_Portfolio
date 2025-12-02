@@ -1,0 +1,9 @@
+node_modules
+.git
+.kiro
+.vscode
+*.md
+!public/README.md
+lighthouse-report*.html
+lighthouse-report*.json
+dist
